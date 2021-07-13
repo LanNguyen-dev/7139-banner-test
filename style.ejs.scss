@@ -1,0 +1,49 @@
+.gt_section-1{
+  position: relative;
+  display: block;
+  overflow-x: hidden;
+  /* <% if (backgroundBanner == "color") { %>
+  background-color: <%=backgroundColor%>;
+  <% } %> */
+  .gt_banner-bg {
+    /* <% if (backgroundBanner == "image") { %>
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: <%=backgroundPosition%>;
+    <% } %> */
+    .gt_overlay {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .gt_trustbagde{
+    height: 100%;
+    justify-content: space-between;
+    margin: 0 -30px;
+    .gt_trustbagde-items {
+      padding: 0 30px;
+      .gt_trustbagde-icon{
+        max-width: 55px;
+        margin-right: 15px;
+        /* color: <%=iconColor%>; */
+      }
+      .gt_trustbagde-text{
+        .gt_trustbagde-text--title{
+          /* color: <%=titleColor%>; */
+        }
+        .gt_trustbagde-text--message{
+          /* color: <%=messagesColor%>; */
+        }
+      }
+    }
+  }
+}

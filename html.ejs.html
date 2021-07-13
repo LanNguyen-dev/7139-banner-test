@@ -1,0 +1,120 @@
+<section class="gt_section-<%=id%> <%=extraClass%>" data-name="<%=name%>">
+  <div <%-bgImage({
+    src: backgroundImage,
+    snippet: {
+      attribute: "backgroundImage"
+    },
+    class: "gt_banner-bg gt_lazyload",
+    style: "",
+    size: "100x"
+  })%>>
+  <div class="gt_overlay"></div>
+  </div>
+  <div class="gt_container">
+    <div class="gt_flex gt_align-i-center gt_trustbagde">
+      <% if(trustBadge1OnOff) { %>
+        <div class="gt_flex gt_align-i-center gt_trustbagde-items">
+          <div class="gt_trustbagde-icon">
+            <%-icon({
+              iconData: icon1,
+              snippet: {
+                  attribute: "icon1",
+              },
+            })%>
+          </div>
+          <div class="gt_trustbagde-text">
+            <% if(trustBadge1OnOff){ %>
+              <p class="gt_trustbagde-text--title">
+                <%-text({
+                  text: titleContent1,
+                  snippet: {
+                      attribute: "titleContent1",
+                  },
+                })%>
+              </p>
+            <% }%>
+            <% if(trustBadge1OnOff){ %>
+              <p class="gt_trustbagde-text--message">
+                <%-text({
+                  text: messageContent1,
+                  snippet: {
+                      attribute: "messageContent1",
+                  },
+                })%>
+              </p>
+            <% }%>
+          </div>
+        </div>
+      <% } %>
+      <% if(trustBadge1OnOff) { %>
+        <div class="gt_flex gt_align-i-center gt_trustbagde-items">
+          <div class="gt_trustbagde-icon">
+            <%-icon({
+              iconData: icon2,
+              snippet: {
+                  attribute: "icon2",
+              },
+            })%>
+          </div>
+          <div class="gt_trustbagde-text">
+            <% if(trustBadge1OnOff){ %>
+              <p class="gt_trustbagde-text--title">
+                <%-text({
+                  text: titleContent2,
+                  snippet: {
+                      attribute: "titleContent2",
+                  },
+                })%>
+              </p>
+            <% }%>
+            <% if(trustBadge1OnOff){ %>
+              <p class="gt_trustbagde-text--message">
+                <%-text({
+                  text: messageContent2,
+                  snippet: {
+                      attribute: "messageContent2",
+                  },
+                })%>
+              </p>
+            <% }%>
+          </div>
+        </div>
+      <% } %>
+      <% if(trustBadge1OnOff) { %>
+        <div class="gt_flex gt_align-i-center gt_trustbagde-items">
+          <div class="gt_trustbagde-icon">
+            <%-icon({
+              iconData: icon3,
+              snippet: {
+                  attribute: "icon3",
+              },
+            })%>
+          </div>
+          <div class="gt_trustbagde-text">
+            <% if(trustBadge1OnOff){ %>
+              <p class="gt_trustbagde-text--title">
+                <%-text({
+                  text: titleContent3,
+                  snippet: {
+                      attribute: "titleContent3",
+                  },
+                })%>
+              </p>
+            <% }%>
+            <% if(trustBadge1OnOff){ %>
+              <p class="gt_trustbagde-text--message">
+                <%-text({
+                  text: messageContent3,
+                  snippet: {
+                      attribute: "messageContent3",
+                  },
+                })%>
+              </p>
+            <% }%>
+          </div>
+        </div>
+      <% } %>
+    </div>
+  </div>
+</section>
+
